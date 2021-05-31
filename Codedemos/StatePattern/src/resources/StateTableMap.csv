@@ -1,0 +1,7 @@
+﻿CurrentState,Event,NextState
+Off,click,On
+Off,doubleClick,Flashing
+On,click,Fade
+Fade,click,Flashing
+Flashing,click,Off
+Flashing,doubleClick,On
