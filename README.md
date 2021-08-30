@@ -1,14 +1,8 @@
-# CCSU F20 CS 417 Design Patterns and CS 505 Design Patterns
+# CCSU Design Patterns
 
 ## Welcome to Design Patterns
 
-Review the syllabus to get familiar with course learning outcomes, grading policy, helpful hints, and course calendar.
-
-[Syllabus CS 417](https://github.com/CCSU-DesignPatterns-F20/DesignPatternsCourseInfo/blob/master/Syllabus-417.md)
-
-[Syllabus CS 505](https://github.com/CCSU-DesignPatterns-F20/DesignPatternsCourseInfo/blob/master/Syllabus-505.md)
-
-[This page will help you get started with git and GitHub](https://github.com/CCSU-DesignPatterns-F20/DesignPatternsCourseInfo/blob/master/Git-ReadMe.md)
+[This page will help you get started with git and GitHub](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/blob/master/Git-ReadMe.md)
 
 We will be covering both in class, but if you run into any challenges you can find resources [on the Git Help page](Help-Git-GitHub.md)
 
@@ -24,5 +18,5 @@ The material for this course is split between Blackboard for course specific inf
 
 ### GitHub content
 
-* [Lecture slides and content](https://github.com/CCSU-DesignPatterns-F20/DesignPatternsCourseInfo/tree/master/LectureSlides)
-* [Code demos](https://github.com/CCSU-DesignPatterns-F20/DesignPatternsCourseInfo/tree/master/Codedemos)
+* [Lecture slides and content](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/tree/master/LectureSlides)
+* [Code demos](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/tree/master/Codedemos)
