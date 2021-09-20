@@ -2,7 +2,7 @@
 
 ## Welcome to Design Patterns
 
-[This page will help you get started with git and GitHub](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/blob/master/Git-ReadMe.md)
+[This page will help you get started with git and GitHub](Git-ReadMe.md)
 
 We will be covering both in class, but if you run into any challenges you can find resources [on the Git Help page](Help-Git-GitHub.md)
 
@@ -18,5 +18,5 @@ The material for this course is split between Blackboard for course specific inf
 
 ### GitHub content
 
-* [Lecture slides and content](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/tree/master/LectureSlides)
-* [Code demos](https://github.com/CCSU-DesignPatterns/DesignPatternsCourseInfo/tree/master/Codedemos)
+* [Lecture slides and content](LectureSlides)
+* [Code demos](Codedemos)
