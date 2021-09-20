@@ -1,3 +1,4 @@
+
 # CCSU Design Patterns
 
 ## Welcome to Design Patterns
@@ -8,6 +9,7 @@ We will be covering both in class, but if you run into any challenges you can fi
 
 ## Course layout
 The material for this course is split between Blackboard for course specific information and this GitHub repository which serves as a Open Education Resource (OER) so you don't need to buy any textbooks.
+
 ### Blackboard content
 
 * **Announcements** will be posted on the Announcements tab on Blackboard and will go out to your university email account when posted.
@@ -19,4 +21,6 @@ The material for this course is split between Blackboard for course specific inf
 ### GitHub content
 
 * [Lecture slides and content](LectureSlides)
+
 * [Code demos](Codedemos)
+
