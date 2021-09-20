@@ -1,8 +1,7 @@
-# CCSU CS 417 Design Patterns and CS 505 Design Patterns
+
+# CCSU Design Patterns
 
 ## Welcome to Design Patterns
-
-Review the syllabus to get familiar with course learning outcomes, grading policy, helpful hints, and course calendar.
 
 [This page will help you get started with git and GitHub](Git-ReadMe.md)
 
@@ -22,4 +21,6 @@ The material for this course is split between Blackboard for course specific inf
 ### GitHub content
 
 * [Lecture slides and content](LectureSlides)
+
 * [Code demos](Codedemos)
+
