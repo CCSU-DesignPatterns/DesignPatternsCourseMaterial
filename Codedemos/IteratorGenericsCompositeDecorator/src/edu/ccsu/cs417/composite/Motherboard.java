@@ -1,6 +1,3 @@
-/*
- * To change this template, choose Tools | Templates and open the template in the editor.
- */
 package edu.ccsu.cs417.composite;
 
 import java.util.Objects;

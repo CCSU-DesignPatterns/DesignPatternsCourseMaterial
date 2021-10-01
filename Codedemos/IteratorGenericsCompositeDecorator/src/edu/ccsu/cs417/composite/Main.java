@@ -55,7 +55,8 @@ public class Main {
     mb2.add(new CPU(4));
     System.out.println("MB1: " + mb1.toString());
     System.out.println("MB2: " + mb2.toString());
-    System.out.println("MB1 equals MB2: " + mb1.equals(mb2));
+    System.out
+        .println("MB1 equals MB2: " + mb1.equals(mb2) + " MB2 equals MB1: " + mb2.equals(mb1));
     System.out.println("MB1 hash: " + mb1.hashCode() + "  MB2 hash: " + mb2.hashCode());
     System.out.println("Now change property on CPU deep within composite...");
     cpu2.setNumCores(3);
