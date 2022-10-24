@@ -7,9 +7,9 @@ import java.util.Random;
  * Magic door, enter door come out in random room
  */
 public class MagicDoor implements Door{
-  private List<Room> rooms;
+  private List<? extends Room> rooms;
 
-  public MagicDoor(List<Room> rooms){
+  public MagicDoor(List<? extends Room> rooms){
     this.rooms = rooms;
   }
 
