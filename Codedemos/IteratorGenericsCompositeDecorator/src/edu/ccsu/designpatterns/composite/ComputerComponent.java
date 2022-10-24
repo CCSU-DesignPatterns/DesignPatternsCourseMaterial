@@ -1,4 +1,4 @@
-package edu.ccsu.cs417.composite;
+package edu.ccsu.designpatterns.composite;
 
 /**
  * Composite implementation, this one based on composite method rather than add/remove with user

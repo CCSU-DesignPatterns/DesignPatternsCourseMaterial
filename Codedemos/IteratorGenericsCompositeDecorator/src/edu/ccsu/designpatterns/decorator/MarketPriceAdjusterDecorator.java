@@ -1,8 +1,8 @@
-package edu.ccsu.cs417.decorator;
+package edu.ccsu.designpatterns.decorator;
 
 import java.util.Objects;
 import java.util.Random;
-import edu.ccsu.cs417.composite.ComputerComponent;
+import edu.ccsu.designpatterns.composite.ComputerComponent;
 
 /**
  * Rather than returning the original price checks competitors to see what how the price should be

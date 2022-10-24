@@ -1,9 +1,9 @@
-package edu.ccsu.cs417.iteratorgeneric;
+package edu.ccsu.designpatterns.iteratorgeneric;
 
-import edu.ccsu.cs417.iteratorgeneric.SpecialWidget;
-import edu.ccsu.cs417.iteratorgeneric.Widget;
-import edu.ccsu.cs417.iteratorgeneric.WidgetCollection;
 import java.util.Iterator;
+import edu.ccsu.designpatterns.iteratorgeneric.SpecialWidget;
+import edu.ccsu.designpatterns.iteratorgeneric.Widget;
+import edu.ccsu.designpatterns.iteratorgeneric.WidgetCollection;
 
 /**
  * Demo of generics and iterator
