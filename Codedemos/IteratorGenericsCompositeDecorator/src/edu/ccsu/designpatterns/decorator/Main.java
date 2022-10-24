@@ -1,11 +1,11 @@
-package edu.ccsu.cs417.decorator;
+package edu.ccsu.designpatterns.decorator;
 
-import edu.ccsu.cs417.composite.CPU;
-import edu.ccsu.cs417.composite.ComputerComponent;
-import edu.ccsu.cs417.composite.ComputerComposite;
-import edu.ccsu.cs417.composite.GraphicsCard;
-import edu.ccsu.cs417.composite.Motherboard;
-import edu.ccsu.cs417.composite.RAMChip;
+import edu.ccsu.designpatterns.composite.CPU;
+import edu.ccsu.designpatterns.composite.ComputerComponent;
+import edu.ccsu.designpatterns.composite.ComputerComposite;
+import edu.ccsu.designpatterns.composite.GraphicsCard;
+import edu.ccsu.designpatterns.composite.Motherboard;
+import edu.ccsu.designpatterns.composite.RAMChip;
 
 /**
  * Demonstration of decorator pattern

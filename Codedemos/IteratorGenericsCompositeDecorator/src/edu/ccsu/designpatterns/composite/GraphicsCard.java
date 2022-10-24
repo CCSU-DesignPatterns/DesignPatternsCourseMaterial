@@ -1,4 +1,4 @@
-package edu.ccsu.cs417.composite;
+package edu.ccsu.designpatterns.composite;
 
 import java.util.Objects;
 

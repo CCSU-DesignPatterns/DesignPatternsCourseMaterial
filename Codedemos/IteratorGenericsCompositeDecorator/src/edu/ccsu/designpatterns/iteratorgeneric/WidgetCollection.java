@@ -1,4 +1,4 @@
-package edu.ccsu.cs417.iteratorgeneric;
+package edu.ccsu.designpatterns.iteratorgeneric;
 
 import java.util.ArrayList;
 import java.util.Iterator;

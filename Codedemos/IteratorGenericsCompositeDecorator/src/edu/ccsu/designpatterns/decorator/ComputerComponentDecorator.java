@@ -1,8 +1,8 @@
-package edu.ccsu.cs417.decorator;
+package edu.ccsu.designpatterns.decorator;
 
 import java.util.Objects;
-import edu.ccsu.cs417.composite.ComputerComponent;
-import edu.ccsu.cs417.composite.ComputerComposite;
+import edu.ccsu.designpatterns.composite.ComputerComponent;
+import edu.ccsu.designpatterns.composite.ComputerComposite;
 
 /**
  * This class implements the basic wrapping of the decorated class
