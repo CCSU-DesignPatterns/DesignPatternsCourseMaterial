@@ -21,8 +21,8 @@ public class Calculator {
     if (calculatorHistory.isEmpty()) {
       System.out.println("There are no items in the history");
     } else {
-      UndoableCommand lastCommand = calculatorHistory.remove(calculatorHistory.size()-1);
-      System.out.println("Unexecuting: "+lastCommand.toString());
+      UndoableCommand lastCommand = calculatorHistory.remove(calculatorHistory.size() - 1);
+      System.out.println("Unexecuting: " + lastCommand.toString());
       lastCommand.unexecute();
     }
   }
@@ -60,6 +60,7 @@ public class Calculator {
   }
 
   public String toString() {
-    return "[Calculator curValue: " + curValue + " memoryValue: " + memoryValue + " history: (" + calculatorHistory.size() + ")]";
+    return "[Calculator curValue: " + curValue + " memoryValue: " + memoryValue + " history: ("
+        + calculatorHistory.size() + ")]";
   }
 }
