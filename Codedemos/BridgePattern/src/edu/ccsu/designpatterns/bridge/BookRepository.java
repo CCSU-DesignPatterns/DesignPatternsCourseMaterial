@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.List;
 import edu.ccsu.designpatterns.bridge.implementation.RepositoryTypes;
 
-public class StudentRepository extends RepositoryAbstraction<Student> {
+public class BookRepository extends RepositoryAbstraction<Book> {
   /**
    * Creates a repository with the specified name using the default implementation.
    * 
    * @param repositoryName Name of the repository
    */
-  public StudentRepository(String repositoryName) {
+  public BookRepository(String repositoryName) {
     super(repositoryName);
   }
 
@@ -21,7 +21,7 @@ public class StudentRepository extends RepositoryAbstraction<Student> {
    * @param repositoryName Name of the repository
    * @param repoType Requested repository type
    */
-  public StudentRepository(String repositoryName, RepositoryTypes repoType) {
+  public BookRepository(String repositoryName, RepositoryTypes repoType) {
     super(repositoryName, repoType);
   }
 
@@ -33,38 +33,37 @@ public class StudentRepository extends RepositoryAbstraction<Student> {
    * @param inputRepoType Requested input repository type
    * @param outputRepoType Requested output repository type
    */
-  public StudentRepository(String repositoryName, RepositoryTypes inputRepoType,
+  public BookRepository(String repositoryName, RepositoryTypes inputRepoType,
       RepositoryTypes outputRepoType) {
     super(repositoryName, inputRepoType, outputRepoType);
   }
 
   @Override
-  public void addItem(Student studentToAdd) {
-    String id = studentToAdd.getStudentId();
-    String[] values =
-        {studentToAdd.getFirstName(), studentToAdd.getLastName(), studentToAdd.getEmail()};
+  public void addItem(Book bookToAdd) {
+    String id = bookToAdd.getBookId();
+    String[] values = {bookToAdd.getBookTitle(), bookToAdd.getPrice().toString()};
     List<String> valuesList = Arrays.asList(values);
     super.addRecord(id, valuesList);
   }
 
   @Override
-  public boolean deleteItem(Student itemToRemove) {
-    return deleteRecord(itemToRemove.getStudentId());
+  public boolean deleteItem(Book itemToRemove) {
+    return deleteRecord(itemToRemove.getBookId());
   }
 
   @Override
-  public Student readItem(String uniqueId) {
-    Student readStudent = null;
+  public Book readItem(String uniqueId) {
+    Book readBook = null;
     List<String> values = readRecord(uniqueId);
     if (values != null) {
-      readStudent = new Student(uniqueId, values.get(0), values.get(1), values.get(2));
+      readBook = new Book(uniqueId, values.get(0), Double.parseDouble(values.get(1)));
     }
-    return readStudent;
+    return readBook;
   }
 
   @Override
   public List<String> getItemMetaData() {
-    String[] itemInfo = {"StudentId", "FirstName", "LastName", "Email"};
+    String[] itemInfo = {"BookId", "BookTitle", "Price"};
     return Arrays.asList(itemInfo);
   }
 }
