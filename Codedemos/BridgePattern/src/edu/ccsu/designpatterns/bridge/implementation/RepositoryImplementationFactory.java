@@ -29,6 +29,8 @@ public class RepositoryImplementationFactory {
     switch (repoType) {
       case CSV:
         return new CsvRepositoryImpl(repositoryName, itemMetaData);
+      case XML:
+        return new XmlRepositoryImpl(repositoryName, itemMetaData);
       // Specified type has not been implemented yet so use default repository
       default:
         return new CsvRepositoryImpl(repositoryName, itemMetaData);

@@ -1,6 +1,7 @@
 package edu.ccsu.designpatterns.bridge;
 
 import java.util.List;
+import edu.ccsu.designpatterns.bridge.implementation.RepositoryTypes;
 
 public class Main {
 
@@ -34,6 +35,28 @@ public class Main {
       studentRepo.addItems(students);
       System.out.println(studentRepo.toString());
 
+      // Load an XML repository
+      StudentRepository xmlRepo = new StudentRepository("student", RepositoryTypes.XML);
+      xmlRepo.load();
+      xmlRepo.addItem(jane);
+      System.out.println(xmlRepo.toString());
+
+      // Create a mixed repo that can read from XML, but outputs CSV
+      StudentRepository mixedRepo =
+          new StudentRepository("student", RepositoryTypes.XML, RepositoryTypes.CSV);
+      mixedRepo.load();
+      mixedRepo.addItems(mixedRepo.readItems());
+      System.out.println(mixedRepo.toString());
+
+      // Variation of abstraction sub classing
+      BookRepository bookRepo = new BookRepository("books");
+      bookRepo.addItem(new Book("1", "Carrie", 11.99));
+      bookRepo.addItem(new Book("2", "The Bell Jar", 9.95));
+      bookRepo.addItem(new Book("3", "The Name of the Wind", 17.23));
+      bookRepo.persist();
+      BookRepository bookRepo2 = new BookRepository("books");
+      bookRepo2.load();
+      System.out.println(bookRepo2.toString());
     } catch (Exception e) {
       e.printStackTrace();
     }

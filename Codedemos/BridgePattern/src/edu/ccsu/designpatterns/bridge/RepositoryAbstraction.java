@@ -47,22 +47,21 @@ public abstract class RepositoryAbstraction<T> {
   }
 
   /**
-   * Set the input repository implementation that should be used
+   * Creates a repository with the specified name with specified repository types for input
+   * implementation and output implementation.
    * 
-   * @param inputRepositoryImpl Input repository implementation to be used.
+   * @param repositoryName Name of the repository
+   * @param inputRepoType Requested input repository type
+   * @param outputRepoType Requested output repository type
    */
-  public void setInputRepositoryImplementation(RepositoryImpl inputRepositoryImpl) {
-    this.inputRepositoryImpl = inputRepositoryImpl;
+  protected RepositoryAbstraction(String repositoryName, RepositoryTypes inputRepoType,
+      RepositoryTypes outputRepoType) {
+    inputRepositoryImpl = RepositoryImplementationFactory
+        .getRepositoryImplementation(repositoryName, getItemMetaData(), inputRepoType);
+    outputRepositoryImpl = RepositoryImplementationFactory
+        .getRepositoryImplementation(repositoryName, getItemMetaData(), outputRepoType);
   }
 
-  /**
-   * Set the output repository implementation that should be used
-   * 
-   * @param outputRepositoryImpl Output repository implementation to be used.
-   */
-  public void setOutputRepositoryImplementation(RepositoryImpl outputRepositoryImpl) {
-    this.outputRepositoryImpl = outputRepositoryImpl;
-  }
 
   /**
    * Adds the passed record to the output repository
