@@ -10,6 +10,13 @@ public class ConsoleObserver implements ILoggerObserver {
   private String loggerName;
   private LogLevel logLevel;
 
+  /**
+   * Creates an observer that will record when events occur at the specified log level logging the
+   * passed name with those events
+   * 
+   * @param loggerName Name of this logger
+   * @param logLevel Log level severity threshold
+   */
   public ConsoleObserver(String loggerName, LogLevel logLevel) {
     this.loggerName = loggerName;
     this.logLevel = logLevel;
