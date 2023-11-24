@@ -2,6 +2,11 @@ package edu.ccsu.designpatterns.logger;
 
 import java.io.IOException;
 
+/**
+ * This class does a simple demonstration of a file logger where messages are logged at various log
+ * levels to a file, then some observers are added to listen for when logging events happen and if
+ * relevent write the event to the console as well.
+ */
 public class Main {
 
   public static void main(String[] args) {

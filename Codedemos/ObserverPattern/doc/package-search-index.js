@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.ccsu.designpatterns.logger"},{"l":"edu.ccsu.designpatterns.pvz"}];updateSearchResults();
