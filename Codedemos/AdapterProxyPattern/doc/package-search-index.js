@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.ccsu.designpatterns.dictionaryproxy"},{"l":"edu.ccsu.designpatterns.jsonreader"},{"l":"edu.ccsu.designpatterns.xmladapter"}];updateSearchResults();
