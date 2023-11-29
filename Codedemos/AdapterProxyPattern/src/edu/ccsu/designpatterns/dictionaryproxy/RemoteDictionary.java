@@ -12,8 +12,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Class that makes a call to https://dictionaryapi.dev/ to lookup the meaning and definition of the
- * passed word.
+ * Class is acting as a Remote Proxy that makes a call to https://dictionaryapi.dev/ to lookup the
+ * meaning and definition of the passed word.
  * 
  * @author Chad Williams
  */

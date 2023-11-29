@@ -24,6 +24,8 @@ public class Main {
     for (int i = 0; i < 10; i++) {
       for (String word : wordList) {
         meanings = dictionary.lookupWordMeanings(word);
+        Meaning meaning = meanings.get(0);
+        // System.out.println(meaning);
         definitions = dictionary.lookupWordDefinitions(word);
         System.out.println(
             "R: " + word + " meanings:" + meanings.size() + " definitions:" + definitions.size());

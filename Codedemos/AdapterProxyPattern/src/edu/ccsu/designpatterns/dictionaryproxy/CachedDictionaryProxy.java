@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * This class is an example of the Proxy pattern, acting as a Proxy for the RemoteDictionary class
- * caching responses to reduce the number of network calls needed for frequent lookups.
+ * This class is an example of the Proxy pattern, acting as a virtual Proxy for the RemoteDictionary
+ * class caching responses to reduce the number of network calls needed for frequent lookups.
  * 
  * @author Chad Williams
  *
