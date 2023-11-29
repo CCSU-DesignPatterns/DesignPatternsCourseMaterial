@@ -4,6 +4,13 @@ import java.io.IOException;
 import edu.ccsu.designpatterns.xmladapter.AppXmlException;
 import edu.ccsu.designpatterns.xmladapter.AppXmlReader;
 
+/**
+ * An Object Adapter implemented using a Decorator approach, this class decorates a AppJSONReader by
+ * adapting it to also being able to support an AppXmlReader interface
+ * 
+ * @author Chad Williams
+ *
+ */
 public class XmlAdapterDecorator implements AppJSONReader, AppXmlReader {
   private AppJSONReader decoratedReader;
 
